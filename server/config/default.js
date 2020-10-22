@@ -1,5 +1,6 @@
 const config = {
     server: {
+        ip_addr: '192.168.222.130',
         secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc',
         port : 3333
     },
@@ -12,7 +13,7 @@ const config = {
             ping_timeout: 30
         },
         http: {
-            port: 8888,
+            port: 4000,
             mediaroot: './server/media',
             allow_origin: '*'
         },
