@@ -34,11 +34,14 @@ own installed path.
 
 Also change secret string. It will be used for session encryption.
 
+If you want to use it on a LAN, you can modify `ip_addr` in the configuration file.
+
 ```
-cd nodeStream && nano /server/config/default.js
+cd nodeStream && nano ./server/config/default.js
 
 const config = {
     server: {
+        ip_addr: '127.0.0.1',
         secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc',
         port : 3333
     },
@@ -51,7 +54,7 @@ const config = {
             ping_timeout: 30
         },
         http: {
-            port: 8888,
+            port: 4000,
             mediaroot: './server/media',
             allow_origin: '*'
         },
@@ -69,6 +72,8 @@ const config = {
         }
     }
 };
+
+module.exports = config;
 ```
 
 #### Install dependencies, build code and run server

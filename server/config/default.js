@@ -1,6 +1,6 @@
 const config = {
     server: {
-        ip_addr: '192.168.222.130',
+        ip_addr: '127.0.0.1',
         secret: 'kjVkuti2xAyF3JGCzSZTk0YWM5JhI9mgQW4rytXc',
         port : 3333
     },
